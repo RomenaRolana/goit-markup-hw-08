@@ -1,0 +1,19 @@
+.site-nav__link--current::after {
+    position: absolute;
+    bottom: 0;
+    display: block;
+    content: '';
+    width: 100%;
+    height: 4px;
+    border-radius: 2px;
+    background-color: $accentColor;
+    animation: scaleUnderline $transitDur $transitTimeFunct;
+  }
+  @keyframes scaleUnderline {
+    0% {
+      transform: scaleX(0);
+    }
+    100% {
+      transform: scaleX(1);
+    }
+  }

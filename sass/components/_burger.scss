@@ -1,0 +1,26 @@
+.head__burger{
+    background-color: $primaryWhite;
+    border: none;
+}
+
+.head__burger-btn{
+    display: flex;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    fill: #000;
+    &:hover,
+    &:focus{
+        fill: $accentColor;
+    }    
+}
+@include tablet{
+    .head__burger{
+        display: none;
+    }
+}
+@include desktop{
+    .head__burger{
+        display: none;
+    }
+}

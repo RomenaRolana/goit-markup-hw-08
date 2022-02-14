@@ -1,0 +1,57 @@
+.section__title {
+    color: $titleTextColor;
+    text-align: center;
+    font-weight: 700;
+    font-size: 28px;
+    line-height: (33 / 28);
+    margin-bottom: 30px;
+    
+  }
+  @include desktop {
+    .section__title {
+      font-size: 36px;
+      line-height: calc(42 / 36);  
+      margin-bottom: 50px;
+    }
+  }
+  
+  .features__title {
+    text-align: center;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: (16 / 14);
+    text-transform: uppercase;
+    margin-bottom: 10px;
+    color: $titleTextColor;
+  }
+  
+  .team__title {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: calc(19 / 16);
+    margin-bottom: 10px;
+    letter-spacing: 0.03em;
+    color: $titleTextColor;
+  }
+  
+  .cases__title {
+    font-weight: 700;
+    font-size: 18px;
+    line-height: calc(36 / 18);
+    letter-spacing: 0.06em;
+    margin-bottom: 4px;
+    margin-bottom: 10px;
+    color: $titleTextColor;
+  }
+  
+  .join__title,
+  .subscribe__title {
+    display: block;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: (16 / 14);
+    letter-spacing: 0.03em;
+    color: $primaryWhite;
+    margin-bottom: 20px;
+  }

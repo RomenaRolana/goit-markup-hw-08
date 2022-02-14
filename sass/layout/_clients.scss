@@ -1,0 +1,74 @@
+.clients__list {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  
+  @include only-mobile {
+  
+    .clients__item {
+      flex-basis: calc((100% - 30px) / 2);
+    
+      &:not(:nth-child(2n)) {
+        margin-right: 30px;
+      }
+    }
+    .clients__item:not(:nth-last-child(-n + 2)) {
+      margin-bottom: 30px;
+    }
+  }
+  
+  @include tablet {
+    .clients__item {
+      flex-basis: calc((100% - 60px) / 3);
+  
+      &:not(:nth-child(3n)) {
+        margin-right: 30px;
+      }
+    }
+  }
+  
+  @include only-tablet {
+    .clients__item:not(:nth-last-child(-n + 3)) {
+      margin-bottom: 30px;
+    }
+  }
+  
+  @include desktop {
+    .clients__item {
+      flex-basis: calc((100% - 150px) / 6);
+  
+      &:not(:nth-child(6n + 6)) {
+        margin-right: 30px;
+      }
+    }
+  }
+  
+  .clients__link {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 92px;
+    border: 1px solid $iconColor;
+    border-radius: 4px;
+    color: $iconColor;
+    transition: border $transitDur $transitTimeFunct;
+  
+    &:hover,
+    &:focus {
+      border: 1px solid $accentColor;
+    }
+  }
+  
+  .clients__icon {
+    width: 106px;
+    height: 60px;
+    fill: currentColor;
+    transition: fill $transitDur $transitTimeFunct;
+  
+    .clients__link:hover &,
+    .clients__link:focus & {
+      fill: $accentColor;
+    }
+  }

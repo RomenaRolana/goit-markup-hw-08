@@ -1,0 +1,19 @@
+.button__secondary {
+    @extend.button;
+    background-color: $secondaryBgGrey;
+    color: $titleTextColor;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.63;
+    padding: 6px 22px;
+    transition: background-color $transitDur $transitTimeFunct,
+      color $transitDur $transitTimeFunct,
+      box-shadow $transitDur $transitTimeFunct;
+    &:hover,
+    &:focus {
+      background-color: $accentColor;
+      color: $primaryWhite;
+      box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+        0px 2px 2px rgba(0, 0, 0, 0.12);
+    }
+  }

@@ -1,0 +1,35 @@
+body {
+    margin: 0 auto;
+    background-color: $primaryWhite;
+    color: $primaryTextColor;
+    font-family: 'Roboto', 'Arial', sans-serif;
+  }
+  
+  @include desktop {
+    body {
+      font-size: 16px;
+      letter-spacing: 0.03em;
+    }
+  }
+  .link {
+    text-decoration: none;
+  }
+  
+  .list {
+    list-style: none;
+  }
+  
+  .section-title,
+  .title {
+    color: $titleTextColor;
+  }
+  
+  @include desktop {
+    .main {
+      margin-top: 80px;
+    }
+  
+    .nav {
+      display: flex;
+    }
+  }

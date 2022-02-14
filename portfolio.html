@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.css" integrity="sha512-Y0MM+V6ymRKN2zStTqzQ227DWhhp4Mzdo6gnlRnuaNCbc+YN/ZH0sBCLTM4M0oSy9c9VKiCvd4Jk44aCLrNS5Q==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
+    <link rel="stylesheet" href="./css/main.min.css">
+    <title>Портфолио</title>
+  </head>
+  <body>
+    <!-- Хедер -->
+    <header class="head">
+      <!-- Главная навигация -->
+      <div class="container head__box">
+        <nav class="nav head__nav">
+          <a href="./index.html" lang="en" class="logo head__logo">Web<span class="head__logo--black">Studio</span></a>
+          <!-- Ссылки на страницы сайта -->
+          <ul class="list site-nav head__site-nav">
+            <li class="site-nav__item"><a href="./index.html" class="link site-nav__link site-nav__link">Студия</a></li>
+            <li class="site-nav__item"><a href="" class="link site-nav__link site-nav__link--current">Портфолио</a></li>
+            <li class="site-nav__item"><a href="" class="link site-nav__link">Контакты</a></li>
+          </ul>
+        </nav>
+        <!-- Контакты -->
+        <ul class="list contacts head__contacts">
+          <li class="contacts__item"><a href="mailto:info@devstudio.com" class="link contacts__link">
+              <svg class="contacts__icon contacts__icon--mail" aria-label="написать">
+                <use href="images/symbol-defs-opt.svg#icon-envelope"></use>
+              </svg>
+              info@devstudio.com</a></li>
+          <li class="contacts__item"><a href="tel:+380961111111" class="link contacts__link">
+              <svg class="contacts__icon contacts__icon--tel" aria-label="позвонить">
+                <use href="images/symbol-defs-opt.svg#icon-phone"></use>
+              </svg>
+              +38 096 111 11 11</a></li>
+        </ul>
+<!-- Бургер для мобильной версии -->
+<button class="head__burger" type="button" data-menu-open>
+  <svg class="head__burger-btn" aria-label="меню">
+    <use href="images/symbol-defs-opt.svg#icon-menu_burger"></use>
+  </svg>
+  </button> 
+
+      </div>
+    </header>
+    <!-- Уникальный контент страницы -->
+    <main class="main">
+      <section class="section">
+        <div class="container">
+        <!-- Скрытый логический заголовок -->
+        <h1 class="section__visually-hidden">Наши кейсы</h1>
+        <ul class="list filter section__filter">
+          <li class="filter__item"><button type="button" class="button__secondary">Все</button></li>
+          <li class="filter__item"><button type="button" class="button__secondary">Веб-сайты</button></li>
+          <li class="filter__item"><button type="button" class="button__secondary">Приложения</button></li>
+          <li class="filter__item"><button type="button" class="button__secondary">Дизайн</button></li>
+          <li class="filter__item"><button type="button" class="button__secondary">Маркетинг</button></li>
+        </ul>
+        <ul class="list cases section__cases">
+          <li class="cases__item">
+            <a class="link cases__link" href="">
+            <div class="cases__img-overlay">
+              <picture>
+                <source srcset="./images/mob/case1-mob@1x.jpg 1x, ./images/mob/case1-mob@2x.jpg 2x" type="image/jpg"
+                  media="(max-width:767px)" />
+                <source srcset="./images/tab/case1-tab@1x.jpg 1x, ./images/tab/case1-tab@2x.jpg 2x" type="image/jpg"
+                  media="(max-width:1199px)" />
+                <source srcset="./images/desk/case1-desk@1x.jpg 1x, ./images/desk/case1-desk@2x.jpg 2x" type="image/jpg"
+                  media="(min-width:1200px)" />
+                <img class="cases__pic" src="./images/mob/case1-mob@1x.jpg" alt="открытый ноутбук" width="370" height="294" />
+              </picture>              
+            <div class="cases__overlay">
+              <p class="cases__overlay--text">Технокряк это современная площадка распространения коронавируса. Компании используют эту платформу для цифрового шпионажа и атак на защищённые сервера конкурентов.</p>
+            </div>
+            </div>              
+            <div class="cases__desc">
+            <h3 class="cases__title">Технокряк</h3>
+            <p class="cases__subtitle">Веб-сайт</p>
+            </div>
+          
+            </a>
+          </li>
+          <li class="cases__item">
+            <a class="link cases__link" href="">
+            <div class="cases__img-overlay">
+              <picture>
+                <source srcset="./images/mob/case2-mob@1x.jpg 1x, ./images/mob/case2-mob@2x.jpg 2x" type="image/jpg"
+                  media="(max-width:767px)" />
+                <source srcset="./images/tab/case2-tab@1x.jpg 1x, ./images/tab/case2-tab@2x.jpg 2x" type="image/jpg"
+                  media="(max-width:1199px)" />
+                <source srcset="./images/desk/case2-desk@1x.jpg 1x, ./images/desk/case2-desk@2x.jpg 2x" type="image/jpg"
+                  media="(min-width:1200px)" />
+                <img class="cases__pic" src="./images/mob/case2-mob@1x.jpg" alt="постер с баскетболистами" width="370" height="294" />
+              </picture>              
+            <div class="cases__overlay">
+              <p class="cases__overlay--text">Постер — это художественно оформленный плакат, который заключает в себе конкретную идею или образ. Слово произошло от английского poster, что значит «афиша» или «объявление».</p>
+            </div>
+          </div>
+            <div class="cases__desc">
+            <h3 class="cases__title">Постер<span lang="en"> New Orlean vs Golden Star</span></h3>
+            <p class="cases__subtitle">Дизайн</p>
+            </div>
+            </a>
+          </li>
+          <li class="cases__item">
+            <a class="link cases__link" href="">
+            <div class="cases__img-overlay">
+              <picture>
+                <source srcset="./images/mob/case3-mob@1x.jpg 1x, ./images/mob/case3-mob@2x.jpg 2x" type="image/jpg"
+                  media="(max-width:767px)" />
+                <source srcset="./images/tab/case3-tab@1x.jpg 1x, ./images/tab/case3-tab@2x.jpg 2x" type="image/jpg"
+                  media="(max-width:1199px)" />
+                <source srcset="./images/desk/case3-desk@1x.jpg 1x, ./images/desk/case3-desk@2x.jpg 2x" type="image/jpg"
+                  media="(min-width:1200px)" />
+                <img class="cases__pic" src="./images/mob/case3-mob@1x.jpg" alt="логотип ресторана с морепродуктами" width="370" height="294" />
+              </picture>              
+            <div class="cases__overlay">
+              <p class="cases__overlay--text">Приложение для ресторана способно увеличить средние чеки, оптимизировать рабочие процессы, снизить затраты на персонал, увеличить клиентуру и много чего еще.</p>
+            </div>
+          </div>
+            <div class="cases__desc">
+            <h3 class="cases__title">Ресторан<span lang="en"> Seafood</span></h3>
+            <p class="cases__subtitle">Приложение</p>
+            </div>
+          
+            </a>
+          </li>
+          <li class="cases__item">
+            <a class="link cases__link" href="">
+            <div class="cases__img-overlay">
+              <picture>
+                <source srcset="./images/mob/case4-mob@1x.jpg 1x, ./images/mob/case4-mob@2x.jpg 2x" type="image/jpg"
+                  media="(max-width:767px)" />
+                <source srcset="./images/tab/case4-tab@1x.jpg 1x, ./images/tab/case4-tab@2x.jpg 2x" type="image/jpg"
+                  media="(max-width:1199px)" />
+                <source srcset="./images/desk/case4-desk@1x.jpg 1x, ./images/desk/case4-desk@2x.jpg 2x" type="image/jpg"
+                  media="(min-width:1200px)" />
+                <img class="cases__pic" src="./images/mob/case4-mob@1x.jpg" alt="чёрные наушники" width="370" height="294" />
+              </picture>              
+              <div class="cases__overlay">
+                <p class="cases__overlay--text">Многие проекты успешно реализуются благодаря применению стандартизированного подхода к управлению проектами. Маркетинг проекта - это центральный ключ к успеху проекта.</p>
+              </div>
+            </div>
+            <div class="cases__desc">
+            <h3 class="cases__title">Проект<span lang="en"> Prime</span></h3>
+            <p class="cases__subtitle">Маркетинг</p>
+            </div>
+            </a>
+          </li>
+          <li class="cases__item">
+            <a class="link cases__link" href="">
+            <div class="cases__img-overlay">
+              <picture>
+                <source srcset="./images/mob/case5-mob@1x.jpg 1x, ./images/mob/case5-mob@2x.jpg 2x" type="image/jpg"
+                  media="(max-width:767px)" />
+                <source srcset="./images/tab/case5-tab@1x.jpg 1x, ./images/tab/case5-tab@2x.jpg 2x" type="image/jpg"
+                  media="(max-width:1199px)" />
+                <source srcset="./images/desk/case5-desk@1x.jpg 1x, ./images/desk/case5-desk@2x.jpg 2x" type="image/jpg"
+                  media="(min-width:1200px)" />
+                <img class="cases__pic" src="./images/mob/case5-mob@1x.jpg" alt="две коробочки" width="370" height="294" />
+              </picture>
+              
+              <div class="cases__overlay">
+                <p class="cases__overlay--text">Синхронизируйте файлы с персонального компьютера на смартфон или планшет. Во время загрузки файлов на сервер ссылкой на них уже можно делиться с друзьями и коллегами. К общедоступным файлам комментарии может оставлять каждый.</p>
+              </div>
+            </div>
+            <div class="cases__desc">            
+            <h3 class="cases__title">Проект <span lang="en"> Boxes</span></h3>
+            <p class="cases__subtitle">Приложение</p>            
+            </div>
+            </a>
+          </li>
+          <li class="cases__item">
+            <a class="link cases__link" href="">
+            <div class="cases__img-overlay">
+              <picture>
+                <source srcset="./images/mob/case6-mob@1x.jpg 1x, ./images/mob/case6-mob@2x.jpg 2x" type="image/jpg"
+                  media="(max-width:767px)" />
+                <source srcset="./images/tab/case6-tab@1x.jpg 1x, ./images/tab/case6-tab@2x.jpg 2x" type="image/jpg"
+                  media="(max-width:1199px)" />
+                <source srcset="./images/desk/case6-desk@1x.jpg 1x, ./images/desk/case6-desk@2x.jpg 2x" type="image/jpg"
+                  media="(min-width:1200px)" />
+                <img class="cases__pic" src="./images/mob/case6-mob@1x.jpg" alt="монитор с инфографикой" width="370" height="294" />
+              </picture>
+              
+              <div class="cases__overlay">
+                <p class="cases__overlay--text">Подборки рисунков от выдающихся художников, примеры промышленного дизайна, оформление упаковки, интерьера и фото дня – все это на сайте вдохновения без границ.</p>
+              </div>
+            </div>
+            <div class="cases__desc">
+            <h3 lang="en" class="cases__title">Inspiration has no Borders</h3>
+            <p class="cases__subtitle">Веб-сайт</p>
+            </div>          
+            </a>
+          </li>
+          <li class="cases__item">
+            <a class="link cases__link" href="">
+            <div class="cases__img-overlay">
+              <picture>
+                <source srcset="./images/mob/case7-mob@1x.jpg 1x, ./images/mob/case7-mob@2x.jpg 2x" type="image/jpg"
+                  media="(max-width:767px)" />
+                <source srcset="./images/tab/case7-tab@1x.jpg 1x, ./images/tab/case7-tab@2x.jpg 2x" type="image/jpg"
+                  media="(max-width:1199px)" />
+                <source srcset="./images/desk/case7-desk@1x.jpg 1x, ./images/desk/case7-desk@2x.jpg 2x" type="image/jpg"
+                  media="(min-width:1200px)" />
+                <img class="cases__pic" src="./images/mob/case7-mob@1x.jpg" alt="разворот журнала" width="370" height="294" />
+              </picture>              
+              <div class="cases__overlay">
+                <p class="cases__overlay--text">Кто сказал, что эра печатных изданий прошла? В эпоху цифрового потребления информации принт-издания превратились в ценные артефакты, которые покупаешь для домашней библиотеки, тактильного и визуального наслаждения, коллекционирования.</p>
+              </div>
+            </div>
+            <div class="cases__desc">
+            <h3 class="cases__title">Издание<span lang="en"> Limited Edition</span></h3>
+            <p class="cases__subtitle">Дизайн</p>
+            </div>          
+            </a>
+          </li>
+          <li class="cases__item">
+            <a class="link cases__link" href="">
+            <div class="cases__img-overlay">
+              <picture>
+                <source srcset="./images/mob/case8-mob@1x.jpg 1x, ./images/mob/case8-mob@2x.jpg 2x" type="image/jpg"
+                  media="(max-width:767px)" />
+                <source srcset="./images/tab/case8-tab@1x.jpg 1x, ./images/tab/case8-tab@2x.jpg 2x" type="image/jpg"
+                  media="(max-width:1199px)" />
+                <source srcset="./images/desk/case8-desk@1x.jpg 1x, ./images/desk/case8-desk@2x.jpg 2x" type="image/jpg"
+                  media="(min-width:1200px)" />
+                <img class="cases__pic" src="./images/mob/case8-mob@1x.jpg" alt="лейб с логотипом" width="370" height="294" />
+              </picture>              
+              <div class="cases__overlay">
+                <p class="cases__overlay--text">Если у вас нет плана действий — вы запускаете кампании хаотично и не знаете, к чему движетесь. Если у вас нет стратегии — вы будете бежать за текущими задачами, но не сможете внедрять инновации.</p>
+              </div>
+            </div>
+            <div class="cases__desc">
+            <h3 class="cases__title">Проект <span lang="en"></span> LAB</h3>
+            <p class="cases__subtitle">Маркетинг</p>
+            </div>
+            </a>
+          </li>
+          <li class="cases__item">
+            <a class="link cases__link" href="">
+            <div class="cases__img-overlay">
+              <picture>
+                <source srcset="./images/mob/case9-mob@1x.jpg 1x, ./images/mob/case9-mob@2x.jpg 2x" type="image/jpg"
+                  media="(max-width:767px)" />
+                <source srcset="./images/tab/case9-tab@1x.jpg 1x, ./images/tab/case9-tab@2x.jpg 2x" type="image/jpg"
+                  media="(max-width:1199px)" />
+                <source srcset="./images/desk/case9-desk@1x.jpg 1x, ./images/desk/case9-desk@2x.jpg 2x" type="image/jpg"
+                  media="(min-width:1200px)" />
+                <img class="cases__pic" src="./images/mob/case9-mob@1x.jpg" alt="печатает текст на ноутбуке" width="370" height="294" />
+              </picture>
+              
+            <div class="cases__overlay">
+              <p class="cases__overlay--text">С помощью мобильного приложения вы можете установить мгновенные и прямые отношения со своими клиентами и завоевать их лояльность.</p>
+            </div>
+          </div>
+            <div class="cases__desc">
+            <h3 lang="en" class="cases__title">Growing Business</h3>
+            <p class="cases__subtitle">Приложение</p>            
+          </div>
+            </a>
+          </li>
+        </ul>
+        </div>
+      </section>
+    </main>
+    <!-- Футер -->
+    <footer class="footer">
+      <div class="container footer__container">
+        <div class="footer__contact-join-box">
+        <div class="about footer__about">
+          <a href="./index.html" lang="en" class="logo footer__logo">Web<span class="footer__logo--white">Studio</span></a>
+          <!-- Контакты -->
+          <address class="address footer__address">
+            <ul class="list footer__list">
+              <li class="footer__item">
+                <a
+                  href="https://goo.gl/maps/S1DiWHNBeh5bc1R79"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="link footer__link footer__link--white"
+                  >г. Киев, пр-т Леси Украинки, 26</a
+                >
+              </li>
+              <li class="footer__item">
+                <a href="mailto:info@devstudio.com" class="link footer__link footer__link--grey">info@devstudio.com</a>
+              </li>
+              <li class="footer__item"><a href="tel:+380961111111" class="link footer__link footer__link--grey">+38 096 111 11 11</a></li>
+            </ul>
+          </address>
+          </div>
+          <!-- Присоединяйтесь -->
+      <div class="join footer__join">
+      <b class="join__title">присоединяйтесь</b>
+      <ul class="list join__social-media">
+        <li class="join__item">
+                  <a href="" target="_blank" rel="noopener noreferrer" class="link join__link">
+            <svg class="join__icon" aria-label="инстаграм">
+              <use href="./images/symbol-defs-opt.svg#icon-instagram-1"></use>
+            </svg>
+            </a>
+          
+        </li>
+        <li class="join__item">
+          <a href="" target="_blank" rel="noopener noreferrer" class="link join__link">
+            <svg class="join__icon" aria-label="твиттер">
+              <use href="./images/symbol-defs-opt.svg#icon-twitter-1"></use>
+            </svg>
+          </a>
+        </li>
+        <li class="join__item">
+          <a href="" target="_blank" rel="noopener noreferrer" class="link join__link">
+            <svg class="join__icon" aria-label="фейсбук">
+              <use href="./images/symbol-defs-opt.svg#icon-facebook-1"></use>
+            </svg>
+          </a>
+        </li>
+        <li class="join__item">
+          <a href="" target="_blank" rel="noopener noreferrer" class="link join__link">
+            <svg class="join__icon" aria-label="линкедин">
+              <use href="./images/symbol-defs-opt.svg#icon-linkedin-1"></use>
+            </svg>
+          </a>
+        </li>
+      </ul>
+    </div>
+  </div>
+    <!-- Подпишитесь -->
+    <div class="footer__subscribe-block">
+      <div class="subscribe footer__subscribe">
+        <b class="subscribe__title">подпишитесь на рассылку</b>
+        <div class="subscribe__box">
+          <input class="subscribe__input" type="email" name="subscribe-mail" id="subscribe-mail" placeholder="E-mail"/>
+          <button class="footer__button footer__button--primary" type="submit">Подписаться
+          <svg class="subscribe__icon" aria-label="подписаться на рассылку"> 
+          <use href="./images/symbol-defs-opt.svg#icon-icon-send"></use>
+          </svg>
+           </button>
+        </div>
+      </div>
+    </div>
+    </div>
+    <p class="container footer__container">
+      2022 Developed by
+      <a
+        class="footer-address__link"
+        href="https://romenarolana.github.io/resumeBeta/"
+        target="_blank"
+        rel="noopener norferrer"
+      >
+        RomenaRolana</a
+      >
+      ( <span class="goit-first">Go</span><span class="goit-sec">It</span> student)
+    </p>
+    </footer>
+
+
+    <!-- Мобильное меню -->
+    <div class="mob-menu is-hidden" data-menu>
+      <button class="mob-menu__close" type="button" data-menu-close >
+        <svg class="mob-menu__close--icon" aria-label="закрыть окно">
+          <use href="./images/symbol-defs-opt.svg#icon-close-1"></use>
+        </svg>
+      </button>
+      <ul class="list mob-nav mob-menu__mob-nav">
+        <li class="mob-nav__item"><a class="link mob-nav__link" href="./index.html">Студия</a></li>
+        <li class="mob-nav__item"><a class="link mob-nav__link mob-nav__link--current" href="">Портфолио</a></li>
+        <li class="mob-nav__item"><a class="link mob-nav__link" href="">Контакты</a></li>
+      </ul>
+      <div class="mob-contact-box mob-menu__mob-contact-box">
+      <ul class="list mob-contacts mob-menu__mob-contacts">
+        <li class="mob-contacts__item"> <a class="link mob-contacts__link mob-contacts__link--blue" href="tel:+380961111111">+38 096 111 11 11</a></li>
+        <li class="mob-contacts__item"> <a class="link mob-contacts__link" href="mailto:info@devstudio.com">info@devstudio.com</a></li>
+      </ul>
+    <ul class="list mob-social mob-menu__mob-social">
+      <li class="mob-social__item"><a class="link mob-social__link" href="">Instagram</a></li>
+      <li class="mob-social__item"><a class="link mob-social__link" href="">Twitter</a></li>
+      <li class="mob-social__item"><a class="link mob-social__link" href="">Facebook</a></li>
+      <li class="mob-social__item"><a class="link mob-social__link" href="">LinkedIn</a></li>
+    </ul>
+    </div>
+    
+    </div>
+    <script src="./js/mob-menu.js"></script>
+    </body>    
+    </html>
